@@ -1,0 +1,5 @@
+export(Opt.Sig, Opt.SigBoot, Opt.SigBootWeight, Opt.SigWeight, Power.F, R.OLS,Opt.sig.2p2n.test,Opt.sig.anova.test,Opt.sig.chisq.test,Opt.sig.norm.test,Opt.sig.p.test,Opt.sig.r.test,Opt.sig.t.test,Opt.sig.t2n.test,Opt.sig.2p.test,Power.Chisq,Opt.Sig.Chisq) 
+importFrom("graphics", "abline", "plot", "points", "polygon","par")
+importFrom("stats", "cov", "df", "pf", "pt", "qf", "dnorm", "quantile","density", "runif", "qchisq", "dchisq", "pchisq")
+importFrom("utils", "tail")
+importFrom("pwr","pwr.2p.test","pwr.2p2n.test","pwr.anova.test","pwr.chisq.test","pwr.norm.test","pwr.t.test","pwr.t2n.test","pwr.r.test","pwr.p.test")
