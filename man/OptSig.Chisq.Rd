@@ -1,5 +1,5 @@
-\name{Opt.Sig.Chisq}
-\alias{Opt.Sig.Chisq}
+\name{OptSig.Chisq}
+\alias{OptSig.Chisq}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Optimal Significance Level for a Chi-square test
@@ -8,18 +8,20 @@ Optimal Significance Level for a Chi-square test
 The function calculates the optimal level of significance for a Ch-square test 
 }
 \usage{
-Opt.Sig.Chisq(df, ncp, p = 0.5, k = 1, Figure = TRUE)
+OptSig.Chisq(w=NULL, N=NULL, ncp=NULL, df, p = 0.5, k = 1, Figure = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
+  \item{w}{Effect size. Cohen's w}
+  \item{N}{Total number of observations}
+  \item{ncp}{ a value of of the non-centality paramter} 
   \item{df}{ the degrees of freedom}
-  \item{ncp}{ a value of of the non-centality paramter}
   \item{p}{ prior probability for H0, default is p = 0.5}
   \item{k}{ relative loss from Type I and II errors, k = L2/L1, default is k = 1}
   \item{Figure}{ show graph if TRUE (default); No graph if FALSE }
 }
 \details{
-See Kim and Choi (2017) 
+See Kim and Choi (2019) 
 }
 \value{
 \item{alpha.opt }{Optimal level of significance}
@@ -27,19 +29,27 @@ See Kim and Choi (2017)
 \item{beta.opt }{Type II error probability at the optimal level}
 }
 \references{
-Kim and Choi, 2017, Choosing the Level of Significance: A Decision-theoretic Approach: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2652773
+Kim and Choi, 2019, Choosing the Level of Significance: A Decision-theoretic Approach: Abacus: a Journal of Accounting, Finance and Business Studies. Wiley. 
 }
 \author{
 Jae. H Kim
 }
 \note{
 Applicable to any Chi-square test
+Either ncp or w (with N) should be given. 
+
+The black curve in the figure is the line of enlightened judgement: see Kim and Choi (2019).
+The red dot inticates the optimal significance level that minimizes the expected loss: (alpha.opt,beta.opt).
+The blue horizontal line indicates the case of alpha = 0.05 as a reference point.     
+
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 Leamer, E. 1978, Specification Searches: Ad Hoc Inference with Nonexperimental Data, Wiley, New York.
+
+Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Hillsdale,NJ: Lawrence Erlbaum.
 
 Kim, JH and Ji, P. 2015, Significance Testing in Empirical Finance: A Critical Review and Assessment, Journal of Empirical Finance 34, 1-14.
 <DOI:http://dx.doi.org/10.1016/j.jempfin.2015.08.006>
@@ -74,7 +84,7 @@ df1=nrow(Rmat); NCP=M1$ncp
 LM=nrow(data1)*M1$Rsq[1,1]
 pval=pchisq(LM,df=df1,lower.tail = FALSE)
 
-Opt.Sig.Chisq(df=df1,ncp=NCP,p=0.5,k=1, Figure=TRUE)
+OptSig.Chisq(df=df1,ncp=NCP,p=0.5,k=1, Figure=TRUE)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

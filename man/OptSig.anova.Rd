@@ -1,33 +1,35 @@
-\name{Opt.sig.p.test}
-\alias{Opt.sig.p.test}
+\name{OptSig.anova}
+\alias{OptSig.anova}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Optimal significance level calculation for proportion tests (one sample)
+Optimal significance level calculation for balanced one-way analysis of variance tests
 }
 \description{
-Computes the optimal significance level for proportion tests (one sample)
+Computes the optimal significance level for the test for balanced one-way analysis of variance tests
 }
 \usage{
-Opt.sig.p.test(h = NULL, n = NULL, p = 0.5, k = 1, alternative = "two.sided")
+OptSig.anova(K = NULL, n = NULL, f = NULL, p = 0.5, k = 1, Figure = TRUE)
 }
+%- maybe also 'usage' for other objects documented here.
 \arguments{
-\item{h}{Effect size}
-  \item{n}{Number of observations (per sample)}
+  \item{K}{Number of groups}
+  \item{n}{Number of observations (per group)}
+  \item{f}{Effect size}
   \item{p}{ prior probability for H0, default is p = 0.5}
   \item{k}{ relative loss from Type I and II errors, k = L2/L1, default is k = 1}
-  \item{alternative}{
-a character string specifying the alternative hypothesis, must be one of "two.sided" (default), "greater" or "less"
-}
+\item{Figure}{ show graph if TRUE (default); No graph if FALSE }
 }
 \details{
 Refer to Kim and Choi (2017) for the details of k and p
+
+For the value of f, refer to Cohen (1988) or Champely (2017)
 }
 \value{
 \item{alpha.opt }{Optimal level of significance}
 \item{beta.opt }{Type II error probability at the optimal level}
 }
 \references{
-Kim and Choi, 2017, Choosing the Level of Significance: A Decision-theoretic Approach: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2652773
+Kim and Choi, 2019, Choosing the Level of Significance: A Decision-theoretic Approach: Abacus: a Journal of Accounting, Finance and Business Studies. Wiley. 
 
 Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Hillsdale,NJ: Lawrence Erlbaum.
 
@@ -39,6 +41,11 @@ Jae H. Kim (using a function from the pwr package)
 }
 \note{
 Also refer to the manual for the pwr package
+
+The black curve in the figure is the line of enlightened judgement: see Kim and Choi (2019).
+The red dot inticates the optimal significance level that minimizes the expected loss: (alpha.opt,beta.opt).
+The blue horizontal line indicates the case of alpha = 0.05 as a reference point.      
+
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
@@ -47,9 +54,9 @@ Also refer to the manual for the pwr package
 Kim and Choi, 2017, Choosing the Level of Significance: A Decision-theoretic Approach
 }
 \examples{
-Opt.sig.p.test(h=0.2,n=60,alternative="two.sided")
+OptSig.anova(f=0.28,K=4,n=20)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ htest }
+\keyword{ htest }% use one of  RShowDoc("KEYWORDS")
 

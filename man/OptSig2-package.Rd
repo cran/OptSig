@@ -13,9 +13,11 @@
 The DESCRIPTION file:
 \packageDESCRIPTION{OptSig}
 \packageIndices{OptSig}
-The package accompanies the working paper: Kim and Choi, 2017, Choosing the Level of Significance: A Decision-theoretic Approach. 
-It offers functions for the optimal level of significance for the test for linear restiction in a regeression model. Other basic statistical tests,  
-including those for population mean and proportion, are also covered using the functions from the pwr package.
+The package accompanies the paper: Kim and Choi, 2019, Choosing the Level of Significance: A Decision-theoretic Approach. Abacus.
+
+It oprovides functions for the optimal level of significance for the test for linear restiction in a regeression model. 
+
+Other basic statistical tests, including those for population mean and proportion, are also covered using the functions from the pwr package.
 
 }
 \author{
@@ -24,7 +26,7 @@ including those for population mean and proportion, are also covered using the f
 Maintainer: \packageMaintainer{OptSig}
 }
 \references{
-Kim and Choi, 2017, Choosing the Level of Significance: A Decision-theoretic Approach: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2652773
+Kim and Choi, 2019, Choosing the Level of Significance: A Decision-theoretic Approach: Abacus: a Journal of Accounting, Finance and Business Studies. Wiley. 
 
 Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Hillsdale,NJ: Lawrence Erlbaum.
 
@@ -52,5 +54,5 @@ K=ncol(x)+1; T=length(y)
 df1=nrow(Rmat);df2=T-K; NCP=M$ncp
 
 # Optimal level of Significance: Under Normality
-Opt.Sig(df1,df2,ncp=NCP,p=0.5,k=1, Figure=TRUE)
+OptSig.F(df1,df2,ncp=NCP,p=0.5,k=1, Figure=TRUE)
 }

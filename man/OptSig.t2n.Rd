@@ -1,5 +1,5 @@
-\name{Opt.sig.t2n.test}
-\alias{Opt.sig.t2n.test}
+\name{OptSig.t2n}
+\alias{OptSig.t2n}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Optimal significance level calculation for two samples (different sizes) t-tests of means
@@ -8,10 +8,11 @@ Optimal significance level calculation for two samples (different sizes) t-tests
 Computes the optimal significance level for two samples (different sizes) t-tests of means
 }
 \usage{
-Opt.sig.t2n.test(d=NULL,n1=NULL,n2=NULL,p=0.5,k=1,alternative="two.sided")
+OptSig.t2n(ncp=NULL,d=NULL,n1=NULL,n2=NULL,p=0.5,k=1,alternative="two.sided",Figure=TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
+  \item{ncp}{Non-centrality}
   \item{d}{Effect size}
   \item{n1}{umber of observations in the first sample}
   \item{n2}{umber of observations in the second sample}
@@ -20,16 +21,25 @@ Opt.sig.t2n.test(d=NULL,n1=NULL,n2=NULL,p=0.5,k=1,alternative="two.sided")
   \item{alternative}{
 a character string specifying the alternative hypothesis, must be one of "two.sided" (default), "greater" or "less"
 }
+\item{Figure}{ show graph if TRUE (default); No graph if FALSE }
 }
 \details{
 Refer to Kim and Choi (2017) for the details of k and p
+
+Either ncp or d value should be specified. 
+
+In a general term, if X ~ N(mu,sigma^2); let H0:mu = mu0; and H1:mu = mu1; 
+
+ncp = sqrt(n)(mu1-mu0)/sigma
+
+d = (mu1-mu0)/sigma: Cohen's d
 }
 \value{
 \item{alpha.opt }{Optimal level of significance}
 \item{beta.opt }{Type II error probability at the optimal level}
 }
 \references{
-Kim and Choi, 2017, Choosing the Level of Significance: A Decision-theoretic Approach: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2652773
+Kim and Choi, 2019, Choosing the Level of Significance: A Decision-theoretic Approach: Abacus: a Journal of Accounting, Finance and Business Studies. Wiley.  
 
 Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Hillsdale,NJ: Lawrence Erlbaum.
 
@@ -41,6 +51,10 @@ Jae H. Kim (using a function from the pwr package)
 }
 \note{
 Also refer to the manual for the pwr package
+
+The black curve in the figure is the line of enlightened judgement: see Kim and Choi (2019).
+The red dot inticates the optimal significance level that minimizes the expected loss: (alpha.opt,beta.opt).
+The blue horizontal line indicates the case of alpha = 0.05 as a reference point.       
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
@@ -49,7 +63,7 @@ Also refer to the manual for the pwr package
 Kim and Choi, 2017, Choosing the Level of Significance: A Decision-theoretic Approach
 }
 \examples{
-Opt.sig.t2n.test(d=0.6,n1=90,n2=60,alternative="greater")
+OptSig.t2n(d=0.6,n1=90,n2=60,alternative="greater")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
