@@ -25,7 +25,9 @@ Gujarati, D. 2015, Econometrics by Example, Second edition, Palgrave.
 \references{
 See Section 2.2 of Gujarari (2015)
 
-Kim and Choi, 2019, Choosing the Level of Significance: A Decision-theoretic Approach, Abacus: a Journal of Accounting, Finance and Business Studies. Wiley. 
+Kim and Choi, 2020, Choosing the Level of Significance: A Decision-theoretic Approach, Abacus: a Journal of Accounting, Finance and Business Studies. Wiley. 
+<https://doi.org/10.1111/abac.12172>
+
 }
 \examples{
 data(data1)

@@ -19,7 +19,7 @@ Power.F(df1, df2, ncp, alpha, Figure = TRUE)
   \item{Figure}{ show graph if TRUE (default); No graph if FALSE }
 }
 \details{
-See Kim and Choi (2017) 
+See Kim and Choi (2020) 
 }
 \value{
   \item{Power }{Power of the test}
@@ -27,13 +27,15 @@ See Kim and Choi (2017)
 
 }
 \references{
-Kim and Choi, 2017, Choosing the Level of Significance: A Decision-theoretic Approach: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2652773
+Kim and Choi, 2020, Choosing the Level of Significance: A Decision-theoretic Approach, Abacus, Wiley.
+<https://doi.org/10.1111/abac.12172>
+
 }
 \author{
 Jae H. Kim
 }
 \note{
-See Application Section and Appendix of Kim and Choi (2017)
+See Application Section and Appendix of Kim and Choi (2020)
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
@@ -43,6 +45,10 @@ Leamer, E. 1978, Specification Searches: Ad Hoc Inference with Nonexperimental D
 
 Kim, JH and Ji, P. 2015, Significance Testing in Empirical Finance: A Critical Review and Assessment, Journal of Empirical Finance 34, 1-14.
 <DOI:http://dx.doi.org/10.1016/j.jempfin.2015.08.006>
+
+Kim, Jae H., 2020, Decision-theoretic hypothesis testing: A primer with R package OptSig, The American Statistician. 
+<https://doi.org/10.1080/00031305.2020.1750484.>
+
 }
 
 \examples{

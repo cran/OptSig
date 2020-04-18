@@ -12,7 +12,7 @@ Opt.sig.norm.test(ncp=NULL,d=NULL,n=NULL,p=0.5,k=1,alternative="two.sided",Figur
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{ncp}{Non-centrality}
+  \item{ncp}{Non-centrality parameter}
   \item{d}{Effect size, Cohen's d}
   \item{n}{Sample size}
   \item{p}{ prior probability for H0, default is p = 0.5}
@@ -22,7 +22,7 @@ a character string specifying the alternative hypothesis, must be one of "two.si
 \item{Figure}{ show graph if TRUE (default); No graph if FALSE }
 }
 \details{
-Refer to Kim and Choi (2019) for the details of k and p
+Refer to Kim and Choi (2020) for the details of k and p
 
 Either ncp or d value should be given. 
 
@@ -38,7 +38,8 @@ d = (mu1-mu0)/sigma: Cohen's d
 \item{beta.opt }{Type II error probability at the optimal level}
 }
 \references{
-Kim and Choi, 2019, Choosing the Level of Significance: A Decision-theoretic Approach: Abacus: a Journal of Accounting, Finance and Business Studies. Wiley. 
+Kim and Choi, 2020, Choosing the Level of Significance: A Decision-theoretic Approach: Abacus: a Journal of Accounting, Finance and Business Studies. Wiley. 
+<https://doi.org/10.1111/abac.12172>
 
 Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Hillsdale,NJ: Lawrence Erlbaum.
 
@@ -59,7 +60,8 @@ The blue horizontal line indicates the case of alpha = 0.05 as a reference point
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-Kim and Choi, 2017, Choosing the Level of Significance: A Decision-theoretic Approach
+Kim, Jae H., 2020, Decision-theoretic hypothesis testing: A primer with R package OptSig, The American Statistician. 
+<https://doi.org/10.1080/00031305.2020.1750484.>
 }
 \examples{
 Opt.sig.norm.test(d=0.2,n=60,alternative="two.sided")

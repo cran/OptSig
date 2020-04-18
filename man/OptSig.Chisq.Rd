@@ -12,16 +12,16 @@ OptSig.Chisq(w=NULL, N=NULL, ncp=NULL, df, p = 0.5, k = 1, Figure = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{w}{Effect size. Cohen's w}
+  \item{w}{Effect size, Cohen's w}
   \item{N}{Total number of observations}
-  \item{ncp}{ a value of of the non-centality paramter} 
+  \item{ncp}{ a value of the non-centality paramter} 
   \item{df}{ the degrees of freedom}
   \item{p}{ prior probability for H0, default is p = 0.5}
   \item{k}{ relative loss from Type I and II errors, k = L2/L1, default is k = 1}
   \item{Figure}{ show graph if TRUE (default); No graph if FALSE }
 }
 \details{
-See Kim and Choi (2019) 
+See Kim and Choi (2020) 
 }
 \value{
 \item{alpha.opt }{Optimal level of significance}
@@ -29,7 +29,9 @@ See Kim and Choi (2019)
 \item{beta.opt }{Type II error probability at the optimal level}
 }
 \references{
-Kim and Choi, 2019, Choosing the Level of Significance: A Decision-theoretic Approach: Abacus: a Journal of Accounting, Finance and Business Studies. Wiley. 
+Kim and Choi, 2020, Choosing the Level of Significance: A Decision-theoretic Approach: Abacus: a Journal of Accounting, Finance and Business Studies. Wiley. 
+<https://doi.org/10.1111/abac.12172>
+
 }
 \author{
 Jae. H Kim
@@ -38,7 +40,7 @@ Jae. H Kim
 Applicable to any Chi-square test
 Either ncp or w (with N) should be given. 
 
-The black curve in the figure is the line of enlightened judgement: see Kim and Choi (2019).
+The black curve in the figure is the line of enlightened judgement: see Kim and Choi (2020).
 The red dot inticates the optimal significance level that minimizes the expected loss: (alpha.opt,beta.opt).
 The blue horizontal line indicates the case of alpha = 0.05 as a reference point.     
 
@@ -53,6 +55,10 @@ Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed
 
 Kim, JH and Ji, P. 2015, Significance Testing in Empirical Finance: A Critical Review and Assessment, Journal of Empirical Finance 34, 1-14.
 <DOI:http://dx.doi.org/10.1016/j.jempfin.2015.08.006>
+
+Kim, Jae H., 2020, Decision-theoretic hypothesis testing: A primer with R package OptSig, The American Statistician. 
+<https://doi.org/10.1080/00031305.2020.1750484.>
+
 }
 
 \examples{

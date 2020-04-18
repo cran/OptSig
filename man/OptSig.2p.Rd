@@ -12,7 +12,7 @@ OptSig.2p(ncp=NULL,h=NULL,n=NULL,p=0.5,k=1,alternative="two.sided",Figure=TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{ncp}{Non-centrality}
+  \item{ncp}{Non-centrality parameter}
   \item{h}{Effect size, Cohen's h}
   \item{n}{Number of observations (per sample)}
   \item{p}{ prior probability for H0, default is p = 0.5}
@@ -23,7 +23,7 @@ a character string specifying the alternative hypothesis, must be one of "two.si
 \item{Figure}{ show graph if TRUE (default); No graph if FALSE }
 }
 \details{
-Refer to Kim and Choi (2017) for the details of k and p
+Refer to Kim and Choi (2020) for the details of k and p
 
 Either ncp or h value should be specified. 
 
@@ -39,7 +39,8 @@ ncp = sqrt(n)(mu1-mu0)/sigma
 \item{beta.opt }{Type II error probability at the optimal level}
 }
 \references{
-Kim and Choi, 2019, Choosing the Level of Significance: A Decision-theoretic Approach: Abacus: a Journal of Accounting, Finance and Business Studies. Wiley. 
+Kim and Choi, 2020, Choosing the Level of Significance: A Decision-theoretic Approach: Abacus: a Journal of Accounting, Finance and Business Studies. Wiley. 
+<https://doi.org/10.1111/abac.12172>
 
 Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Hillsdale,NJ: Lawrence Erlbaum.
 
@@ -52,7 +53,7 @@ Jae H. Kim (using a function from the pwr package)
 \note{
 Also refer to the manual for the pwr package,
 
-The black curve in the figure is the line of enlightened judgement: see Kim and Choi (2019).
+The black curve in the figure is the line of enlightened judgement: see Kim and Choi (2020).
 The red dot inticates the optimal significance level that minimizes the expected loss: (alpha.opt,beta.opt).
 The blue horizontal line indicates the case of alpha = 0.05 as a reference point.    
 
@@ -61,7 +62,9 @@ The blue horizontal line indicates the case of alpha = 0.05 as a reference point
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-Kim and Choi, 2019, Choosing the Level of Significance: A Decision-theoretic Approach, Abacus: a Journal of Accounting, Finance and Business Studies. Wiley. 
+Kim, Jae H., 2020, Decision-theoretic hypothesis testing: A primer with R package OptSig, The American Statistician. 
+<https://doi.org/10.1080/00031305.2020.1750484.>
+
 }
 \examples{
 OptSig.2p(h=0.2,n=60,alternative="two.sided")
