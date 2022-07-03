@@ -10,7 +10,6 @@ Computes the optimal significance level for the test for two proportions
 \usage{
 OptSig.2p2n(ncp=NULL,h=NULL,n1=NULL,n2=NULL,p=0.5,k=1,alternative="two.sided",Figure=TRUE)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{ncp}{Non-centrality parameter}
   \item{h}{Effect size, Cohen's h}
@@ -60,7 +59,6 @@ The red dot inticates the optimal significance level that minimizes the expected
 The blue horizontal line indicates the case of alpha = 0.05 as a reference point.     
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 Kim, Jae H., 2020, Decision-theoretic hypothesis testing: A primer with R package OptSig, The American Statistician. 

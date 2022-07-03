@@ -1,6 +1,6 @@
 \name{OptSig.2p}
 \alias{OptSig.2p}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
 Optimal significance level calculation for the test for two proportions (same sample sizes)
 }
@@ -10,7 +10,6 @@ Computes the optimal significance level for the test for two proportions
 \usage{
 OptSig.2p(ncp=NULL,h=NULL,n=NULL,p=0.5,k=1,alternative="two.sided",Figure=TRUE)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{ncp}{Non-centrality parameter}
   \item{h}{Effect size, Cohen's h}
@@ -59,7 +58,6 @@ The blue horizontal line indicates the case of alpha = 0.05 as a reference point
 
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 Kim, Jae H., 2020, Decision-theoretic hypothesis testing: A primer with R package OptSig, The American Statistician. 

@@ -44,7 +44,6 @@ The blue horizontal line indicates the case of alpha = 0.05 as a reference point
 
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 Leamer, E. 1978, Specification Searches: Ad Hoc Inference with Nonexperimental Data, Wiley, New York.

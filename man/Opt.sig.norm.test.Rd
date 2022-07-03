@@ -1,6 +1,6 @@
 \name{Opt.sig.norm.test}
 \alias{Opt.sig.norm.test}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
 Optimal significance level calculation for the mean of a normal distribution (known variance)
 }
@@ -56,8 +56,6 @@ The black curve in the figure is the line of enlightened judgement: see Kim and 
 The red dot inticates the optimal significance level that minimizes the expected loss: (alpha.opt,beta.opt).
 The blue horizontal line indicates the case of alpha = 0.05 as a reference point.       
 }
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 Kim, Jae H., 2020, Decision-theoretic hypothesis testing: A primer with R package OptSig, The American Statistician. 

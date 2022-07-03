@@ -1,7 +1,7 @@
 OptSig.Boot <-
 function(y,x,Rmat,rvec,p=0.5,k=1,nboot=3000,wild=FALSE,Figure=TRUE)
 {
- set.seed(12345)
+ 
   y=as.matrix(y);x=as.matrix(x)
   M=R.OLS(y,x,Rmat,rvec); n=nrow(y) 
   b0 = M$coef[,2,drop=FALSE]; e0 = M$resid[,2];  

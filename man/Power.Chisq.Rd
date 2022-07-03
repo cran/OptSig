@@ -1,6 +1,5 @@
 \name{Power.Chisq}
 \alias{Power.Chisq}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Function to calculate the power of a Chi-square test
 }
@@ -10,7 +9,6 @@ This function calculates the power of a Chi-square test, given the value of non-
 \usage{
 Power.Chisq(df, ncp, alpha, Figure = TRUE)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{df}{ degree of freedom}
   \item{ncp}{ a value of of the non-centality paramter}
@@ -36,7 +34,6 @@ Jae H. Kim
 See Application Section and Appendix of Kim and Choi (2017)
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 Leamer, E. 1978, Specification Searches: Ad Hoc Inference with Nonexperimental Data, Wiley, New York.

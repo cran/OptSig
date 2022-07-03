@@ -1,6 +1,5 @@
 \name{Opt.sig.t.test}
 \alias{Opt.sig.t.test}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Optimal significance level calculation for t-tests of means (one sample, two samples and paired samples)
 }
@@ -61,7 +60,6 @@ The blue horizontal line indicates the case of alpha = 0.05 as a reference point
 
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 Kim, Jae H., 2020, Decision-theoretic hypothesis testing: A primer with R package OptSig, The American Statistician. 

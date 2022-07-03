@@ -1,6 +1,5 @@
 \name{Power.F}
 \alias{Power.F}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
  Function to calculate the power of an F-test
 }
@@ -38,7 +37,6 @@ Jae H. Kim
 See Application Section and Appendix of Kim and Choi (2020)
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 Leamer, E. 1978, Specification Searches: Ad Hoc Inference with Nonexperimental Data, Wiley, New York.

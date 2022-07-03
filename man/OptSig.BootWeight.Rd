@@ -1,6 +1,5 @@
 \name{OptSig.BootWeight}
 \alias{OptSig.BootWeight}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Weighted Optimal Significance Level for the F-test based on the bootstrap
 }
@@ -13,7 +12,6 @@ The weights are obtained from the bootstrap distribution of the non-centrality p
 \usage{
 OptSig.BootWeight(y,x,Rmat,rvec,p=0.5,k=1,nboot=3000,wild=FALSE,Figure=TRUE)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
  \item{y}{ a matrix of dependent variable, T by 1}
   \item{x}{ a matrix of K independent variable, T by K}
@@ -44,7 +42,6 @@ Jae H. Kim
 Applicable to a linear regression model
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 Leamer, E. 1978, Specification Searches: Ad Hoc Inference with Nonexperimental Data, Wiley, New York.

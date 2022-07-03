@@ -1,6 +1,5 @@
 \name{OptSig.Weight}
 \alias{OptSig.Weight}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Weighted Optimal Significance Level for the F-test based on the assumption of normality in the error term
 }
@@ -13,7 +12,6 @@ The weights are obtained from a folded-normal distribution with mean m and stara
 \usage{
 OptSig.Weight(df1, df2, m, delta = 2, p = 0.5, k = 1, Figure = TRUE)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
  \item{df1}{ the first degrees of freedom for the F-distribution}
   \item{df2}{ the second degrees of freedom for the F-distribution}

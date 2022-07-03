@@ -1,6 +1,5 @@
 \name{OptSig.Chisq}
 \alias{OptSig.Chisq}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Optimal Significance Level for a Chi-square test
 }
@@ -10,7 +9,6 @@ The function calculates the optimal level of significance for a Ch-square test
 \usage{
 OptSig.Chisq(w=NULL, N=NULL, ncp=NULL, df, p = 0.5, k = 1, Figure = TRUE)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{w}{Effect size, Cohen's w}
   \item{N}{Total number of observations}
@@ -46,7 +44,6 @@ The blue horizontal line indicates the case of alpha = 0.05 as a reference point
 
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 Leamer, E. 1978, Specification Searches: Ad Hoc Inference with Nonexperimental Data, Wiley, New York.

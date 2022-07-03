@@ -1,6 +1,5 @@
 \name{OptSig.t2n}
 \alias{OptSig.t2n}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Optimal significance level calculation for two samples (different sizes) t-tests of means
 }
@@ -10,7 +9,6 @@ Computes the optimal significance level for two samples (different sizes) t-test
 \usage{
 OptSig.t2n(ncp=NULL,d=NULL,n1=NULL,n2=NULL,p=0.5,k=1,alternative="two.sided",Figure=TRUE)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{ncp}{Non-centrality parameter}
   \item{d}{Effect size}
@@ -58,7 +56,6 @@ The red dot inticates the optimal significance level that minimizes the expected
 The blue horizontal line indicates the case of alpha = 0.05 as a reference point.       
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 Kim, Jae H., 2020, Decision-theoretic hypothesis testing: A primer with R package OptSig, The American Statistician. 

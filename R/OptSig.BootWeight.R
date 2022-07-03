@@ -1,6 +1,6 @@
 OptSig.BootWeight <-
 function(y,x,Rmat,rvec,p=0.5,k=1,nboot=3000,wild=FALSE,Figure=TRUE){
-  set.seed(123456)
+ 
   y=as.matrix(y);x=as.matrix(x);n=nrow(y); 
   
   M=R.OLS(y,x,Rmat,rvec); n=nrow(y) 

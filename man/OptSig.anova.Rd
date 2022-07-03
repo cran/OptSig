@@ -10,7 +10,6 @@ Computes the optimal significance level for the test for balanced one-way analys
 \usage{
 OptSig.anova(K = NULL, n = NULL, f = NULL, p = 0.5, k = 1, Figure = TRUE)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{K}{Number of groups}
   \item{n}{Number of observations (per group)}
@@ -49,7 +48,6 @@ The blue horizontal line indicates the case of alpha = 0.05 as a reference point
 
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 Kim, Jae H., 2020, Decision-theoretic hypothesis testing: A primer with R package OptSig, The American Statistician. 

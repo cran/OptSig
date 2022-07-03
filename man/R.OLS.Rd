@@ -1,6 +1,5 @@
 \name{R.OLS}
 \alias{R.OLS}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Restricted OLS estimation and F-test
 }
@@ -10,7 +9,6 @@ Function to calcuate the Restricted (under H0) OLS Estimators and F-test statist
 \usage{
 R.OLS(y, x, Rmat, rvec)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{y}{ a matrix of dependent variable, T by 1}
   \item{x}{ a matrix of K independent variable, T by K}
